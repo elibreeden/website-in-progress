@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="rootfolder/box-practice.css">
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		.item1 {grid-area: logo;}
+		.item2 {grid-area: navigation;}
+		.item3 {grid-area: sidebar;}
+		.item4 {grid-area: sidephoto;}
+		.item5 {grid-area: main;}
+		.item6 {grid-area: firstitem;}
+		.item7 {grid-area: seconditem;}
+		.item8 {grid-area: thirditem;}
+		
+		.grid-container {
+		  display: grid;
+  grid-template-areas:
+    'logo navigation sidebar'
+    'sidephoto main main'
+    'firstitem seconditem thirditem';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+				
+		}
+		.grid-container > div {
+			background-color: lightgray;
+			text-align: center;
+			padding: 20px;
+			font-size: 18px;
+		}
+	</style>
+</head>
+
+<body>
+	<center>
+	<div class="center">
+	<div class="grid-container">
+		<div class="item1">
+			<picture><img src="rootfolder/images/chooseandinfusehoriz.png" width="175" height="30" alt="Choose and Infuse"/></picture>
+		</div>
+		<div class="item2">
+			<a href="index.html">home</a>
+			<a href="rootfolder/order.html">order</a>
+			<a href="about.html">about</a>
+			<a href="contact.html">contact</a>
+			<a href="reviews.html">reviews</a>
+		</div>
+		<div class="item3">
+			<input type="text" placeholder="Search.." size="12px"> 
+		</div>
+		<div class="item4">
+			<picture><img src="rootfolder/images/image1.jpg" width="250" height="300" alt="Mixed Drink with Fig And Thyme"/></picture>
+		</div>
+		<div class="item5">
+			<h1>Choose How (And If) You Drink</h1>
+			<p1>Choose & Infuse is the <i>only</i> mixed drink subscription box that allows you to choose whether you would like alcoholic or non-alcoholic spirits included in your box.</p1>
+			<p></p>
+			<p1><b>Starting at just $60 per box, skip or cancel anytime.</b></p1>
+		</div>
+		<div class="item6">
+			<picture><img src="rootfolder/images/productplaceholder.png" width="150" height="100" alt="product image"/></picture>
+			<h2>Product Name</h2>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		<div class="item7">
+		<picture><img src="rootfolder/images/productplaceholder.png" width="150" height="100" alt="product image"/></picture>
+			<h2>Product Name</h2>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		<div class="item8">
+		<picture><img src="rootfolder/images/productplaceholder.png" width="150" height="100" alt="product image"/></picture>
+			<h2>Product Name</h2>
+			<p2>$60.00 <i>In Stock</i></p2>
+		</div>
+		</div></div>
+		</center>
+</body>
+</html>
