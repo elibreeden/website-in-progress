@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Semi+Condensed:wght@300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="rootfolder/box-practice.css">
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<style>
+		.item1 {grid-area: logo;}
+		.item2 {grid-area: navigation;}
+		.item3 {grid-area: sidebar;}
+		.item4 {grid-area: productcat1;}
+		.item5 {grid-area: itemlisting1;}
+		.item6 {grid-area: itemlisting2;}
+		.item7 {grid-area: itemlisting3;}
+		.item8 {grid-area: productcat2;}
+		.item9 {grid-area: itemlisting4;}
+		.item10 {grid-area: itemlisting5;}
+		.item11 {grid-area: itemlisting6;}
+		.item12 {grid-area: footerside;}
+		.item13 {grid-area: footertext;}
+		
+		.grid-container {
+		  display: grid;
+  grid-template-areas:
+    'logo navigation sidebar'
+    'productcat1 productcat1 productcat1'
+    'itemlisting1 itemlisting2 itemlisting3'
+	'productcat2 productcat2 productcat2'
+	  'itemlisting4 itemlisting5 itemlisting6'
+	  'footerside footertext footertext';
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+				
+		}
+		.grid-container > div {
+			background-color: lightgray;
+			text-align: center;
+			padding: 20px;
+			font-size: 18px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="grid-container">
+		<div class="item1">
+			<picture><img src="rootfolder/images/chooseandinfusehoriz.png" width="175" height="30" alt="Choose and Infuse"/></picture>
+		</div>
+		<div class="item2">
+			<a href="index.html">home</a>
+			<a href="order.html">order</a>
+			<a href="about.html">about</a>
+			<a href="contact.html">contact</a>
+			<a href="reviews.html">reviews</a>
+		</div>
+		<div class="item3">
+			<input type="text" placeholder="Search.." size="12px"> 
+		</div>
+		<div class="item4">PRODUCT CATEGORY 1</div>
+		<div class="item5"><picture><img src="rootfolder/images/productplaceholder.png" width="150" height="100" alt="product image"/></picture>
+			<h2>Product Name</h2>
+			<p2>$60.00 <i>In Stock</i></p2></div>
+		<div class="item6"><picture><img src="rootfolder/images/productplaceholder.png" width="150" height="100" alt="product image"/></picture>
+			<h2>Product Name</h2>
+			<p2>$60.00 <i>In Stock</i></p2></div>
+		<div class="item7"><picture><img src="rootfolder/images/productplaceholder.png" width="150" height="100" alt="product image"/></picture>
+			<h2>Product Name</h2>
+			<p2>$60.00 <i>In Stock</i></p2></div>
+		<div class="item8">PRODUCT CATEGORY 2</div>
+		<div class="item9"><picture><img src="rootfolder/images/productplaceholder.png" width="150" height="100" alt="product image"/></picture>
+			<h2>Product Name</h2>
+			<p2>$60.00 <i>In Stock</i></p2></div>
+		<div class="item10"><picture><img src="rootfolder/images/productplaceholder.png" width="150" height="100" alt="product image"/></picture>
+			<h2>Product Name</h2>
+			<p2>$60.00 <i>In Stock</i></p2></div>
+		<div class="item11"><picture><img src="rootfolder/images/productplaceholder.png" width="150" height="100" alt="product image"/></picture>
+			<h2>Product Name</h2>
+			<p2>$60.00 <i>In Stock</i></p2></div>
+		<div class="item12">FOOTER</div>
+		<div class="item13">footer text</div>
+	</div>
+</body>
+</html>
